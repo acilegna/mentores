@@ -1,0 +1,22 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  height: 1500px;
+}
+
+.your-class {
+  height: 2000px;
+}
+#mentor {
+  color: white;
+  font-size: 3.5em;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.text-button-mentor {
+  text-decoration: none;
+  top: 17%;
+  left: 26%;
+  position: absolute;
+}
