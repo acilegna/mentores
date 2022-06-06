@@ -13,8 +13,8 @@ export const Home = () => {
           <div
             style={{
               position: 'absolute',
-              width: '100px',
-              height: '30px',
+              width: '40px',
+              height: '15px',
               borderRadius: '10%',
               background: `rgba(255, 255, 255, ${precentage * 1})`,
               left: '50%',
@@ -26,11 +26,11 @@ export const Home = () => {
             </a>
           </div>
         )}>
-        <div style={{height: 900}}>
+        <div style={{height: 400}}>
           <h1 id="mentor">ENCUENTRA AQUI TU MENTOR</h1>
         </div>
       </Parallax>
-      <div style={{height: '100vh'}}></div>
+      <div style={{height: '30vh'}}></div>
       <h1>| | |</h1>
     </div>
   );

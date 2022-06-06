@@ -1,22 +1,26 @@
 .App {
   font-family: sans-serif;
   text-align: center;
-  height: 1500px;
+  height: 100px;
 }
 
 .your-class {
-  height: 2000px;
+  height: 1000px;
 }
 #mentor {
   color: white;
-  font-size: 3.5em;
+  font-size: 2.3em;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 .text-button-mentor {
-  text-decoration: none;
-  top: 17%;
-  left: 26%;
+  top: 11%;
+  left: 12%;
   position: absolute;
+}
+a.text-button-mentor {
+  text-decoration: none;
+  font-size: 10px;
+  color: rgb(69, 5, 141);
 }
