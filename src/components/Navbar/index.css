@@ -10,13 +10,6 @@
   color: rgb(20, 20, 20);
   background-color: rgba(126, 0, 0, 0);
 }
-.nav .nav-pills {
-  position: fixed;
-  z-index: 1030;
-}
-.nav {
-  background-color: rgb(6, 219, 130);
-}
 
 .nav-link {
   color: #484848;
