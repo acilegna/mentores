@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.css';
 import {Parallax} from 'react-parallax';
-import imagen from './developer-coding-on-laptop.jpg';
+import imagen from './john-schnobrich-FlPc9_VocJ4-unsplash.jpg';
 
-export const Home = () => {
+export const Mentor = () => {
   return (
     <div style={{textAlign: 'center'}}>
       <Parallax
@@ -20,17 +20,11 @@ export const Home = () => {
               left: '50%',
               top: '50%',
               transform: `translate(-50%, -50%) scale(${precentage * 3})`,
-            }}>
-            <a className="text-button-mentor" href=" ">
-              Buscar
-            </a>
-          </div>
+            }}></div>
         )}>
-        <div style={{height: 400}}>
-          <h1 id="mentor">ENCUENTRA AQUI TU MENTOR</h1>
-        </div>
+        <div style={{height: 400}}></div>
       </Parallax>
-      <div style={{height: '30vh'}}></div>
+      <div style={{height: '1vh'}}></div>
       <h1>| | |</h1>
     </div>
   );
