@@ -8,16 +8,34 @@
   height: 1000px;
 }
 #mentor {
-  color: white;
-  font-size: 2.3em;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px black;
+  font-weight: bold;
+  font-size: 2.2em;
   text-align: center;
-  padding-top: 70px;
+  /*  padding-top: 70px; */
+  padding-bottom: 15px;
+}
+#btns-primary {
+  background-color: #2353cb;
+  border-color: #ebed66;
+  border-radius: 2px;
+}
+#help {
+  color: #ebed66;
+  font-size: 1.1em;
+  text-align: center;
+  /* padding-top: 10px;
+   */
+  padding-bottom: 15px;
 }
 
-.text-button-mentor {
-  top: 11%;
-  left: 12%;
-  position: absolute;
+.cont-mentor {
+  /*background: yellow;*/
+  height: 100vh;
+  display: grid;
+  align-content: center;
+  justify-content: center;
 }
 a.text-button-mentor {
   text-decoration: none;
