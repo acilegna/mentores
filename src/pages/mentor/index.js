@@ -22,7 +22,7 @@ export const Mentor = () => {
               transform: `translate(-50%, -50%) scale(${precentage * 3})`,
             }}></div>
         )}>
-        <div style={{height: 400}}></div>
+        <div style={{height: 500}}></div>
       </Parallax>
       <div style={{height: '1vh'}}></div>
       <h1>| | |</h1>
