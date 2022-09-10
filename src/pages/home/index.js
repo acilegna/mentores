@@ -5,6 +5,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import imagen from './developer-coding-on-laptop.jpg';
+import Typewriter from 'typewriter-effect';
 
 import Button from 'react-bootstrap/Button';
 
@@ -32,15 +33,23 @@ export const Home = () => {
           <Container fluid>
             <Row>
               <Col>
-                <h1 id="mentor">ENCUENTRA AQUÍ TU MENTOR</h1>
+                <h2 id="mentor">
+                  INCREMENTA TU{' '}
+                  <strong id="span">
+                    <Typewriter
+                      options={{
+                        strings: ['CONOCIMIENTO.', 'POTENCIAL.'],
+                        autoStart: true,
+                        loop: true,
+                      }}
+                    />
+                  </strong>{' '}
+                </h2>
               </Col>
             </Row>
             <Row>
               <Col>
-                <h2 id="help">
-                  incrementa tu potencial con ayuda de nuestros{' '}
-                  <strong>Mentores</strong>
-                </h2>
+                <h1 id="help">Encuentra aquí tu mentor</h1>
               </Col>
             </Row>
             <Row>
@@ -50,7 +59,7 @@ export const Home = () => {
                   size="sm"
                   disabled={isLoading}
                   onClick={!isLoading ? handleClick : null}>
-                  {isLoading ? 'Loading…' : 'Ver mentores'}
+                  {isLoading ? 'CARGANDO…' : 'VER MENTORES'}
                 </Button>
               </Col>
             </Row>
