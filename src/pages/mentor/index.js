@@ -1,31 +1,46 @@
 import React from 'react';
 import './index.css';
-import {Parallax} from 'react-parallax';
-import imagen from './john-schnobrich-FlPc9_VocJ4-unsplash.jpg';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import imageTwo from './john-schnobrich-FlPc9_VocJ4-unsplash.jpg';
+import Image from 'react-bootstrap/Image';
+import Figure from 'react-bootstrap/Figure';
 
 export const Mentor = () => {
   return (
-    <div style={{textAlign: 'center'}}>
-      <Parallax
-        bgImage={imagen}
-        strength={200}
-        renderLayer={precentage => (
-          <div
-            style={{
-              position: 'absolute',
-              width: '40px',
-              height: '15px',
-              borderRadius: '10%',
-              background: `rgba(255, 255, 255, ${precentage * 1})`,
-              left: '50%',
-              top: '50%',
-              transform: `translate(-50%, -50%) scale(${precentage * 3})`,
-            }}></div>
-        )}>
-        <div style={{height: 500}}></div>
-      </Parallax>
-      <div style={{height: '1vh'}}></div>
-      <h1>| | |</h1>
-    </div>
+    <Container fluid>
+      <Row>
+        <Col md={12}>
+          <h1 className="text-center">Nuestro equipo</h1>
+        </Col>
+        <Col md={12}>
+          <h1 className="text-center">Juntos es mejor- Simon Sinek</h1>
+        </Col>
+      </Row>
+      <Row>
+        <Col xs={12} sm={6} md={3}>
+          <Figure className="cont-img">
+            <Image fluid src={imageTwo} className="img-one" />
+          </Figure>
+        </Col>
+
+        <Col xs={12} sm={6} md={3}>
+          <Figure className="cont-img">
+            <Image fluid src={imageTwo} className="img-one" />
+          </Figure>
+        </Col>
+        <Col xs={12} sm={6} md={3}>
+          <Figure className="cont-img">
+            <Image fluid src={imageTwo} className="img-one" />
+          </Figure>
+        </Col>
+        <Col xs={12} sm={6} md={3}>
+          <Figure className="cont-img">
+            <Image fluid src={imageTwo} className="img-one" />
+          </Figure>
+        </Col>
+      </Row>
+    </Container>
   );
 };
