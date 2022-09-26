@@ -21,25 +21,6 @@ const Buttons = ({filterItem, setItem, menuItems}) => {
           onClick={() => setItem(Data)}>
           All
         </button>
-
-        {/* <button
-          className="btn-warning text-white p-1 mx-5"
-          onClick={() => filterItem("Breakfast")}
-        >
-          Breakfast
-        </button>
-        <button
-          className="btn-warning text-white p-1 px-2 mx-5"
-          onClick={() => filterItem("Lunch")}
-        >
-          Lunch
-        </button>
-        <button
-          className="btn-warning text-white p-1 mx-5"
-          onClick={() => filterItem("Dinner")}
-        >
-          Dinner
-        </button> */}
       </div>
     </>
   );

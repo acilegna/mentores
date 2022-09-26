@@ -26,3 +26,12 @@
   height: 350px !important;
   width: 313px;
 }
+.title-languaje {
+  color: black;
+  font-size: 23px;
+  text-align: center;
+}
+
+.btn-toolbar {
+  display: block !important;
+}
