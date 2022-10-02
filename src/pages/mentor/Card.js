@@ -3,12 +3,11 @@ import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import {ButtonToolbar} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
+
 const popoverHoverFocus = (
   <Popover id="popover-trigger-hover-focus" title="Popover bottom">
     <strong>Holy guacamole!</strong> Check this info.
-    <strong>Holy guacamole!</strong> Check this info.
-    <strong>Holy guacamole!</strong> Check this info.
-    <Button variant="success">Click me to see</Button>
+    <Button variant="success">Click me to seeU</Button>
   </Popover>
 );
 const Card = ({item}) => {
@@ -27,8 +26,9 @@ const Card = ({item}) => {
                 <div className="card-body">
                   <ButtonToolbar>
                     <OverlayTrigger
-                      trigger={['hover', 'focus']}
+                      trigger={['hover', 'hover']}
                       placement="bottom"
+                      delay={{show: 250, hide: 1500}}
                       overlay={popoverHoverFocus}>
                       <div className="fs-4">
                         <h2 className=" ">{Val.language}</h2>
