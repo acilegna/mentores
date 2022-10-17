@@ -35,3 +35,17 @@
 .btn-toolbar {
   display: block !important;
 }
+.bton-filter {
+  color: #fdfdfd;
+  background: rgba(255, 0, 0, 0);
+  border-style: inset;
+  border-color: rgb(255, 255, 255);
+}
+.cont-text {
+  background: rgb(184, 26, 142);
+  padding-bottom: 100px;
+}
+
+.active {
+  background-color: red;
+}

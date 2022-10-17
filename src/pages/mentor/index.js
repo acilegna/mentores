@@ -18,7 +18,7 @@ export const Mentor = () => {
   return (
     <>
       <div className="container-fluid">
-        <div className="row">
+        <div className="row cont-text">
           <h1 className="col-12 text-center my-3 fw-bold">Nuestro equipo</h1>
           <h2 className="col-12 text-center ">Juntos es mejor- Simon Sinek</h2>
           <Buttons
@@ -26,6 +26,8 @@ export const Mentor = () => {
             setItem={setItem}
             menuItems={menuItems}
           />
+        </div>
+        <div className="row">
           <Card item={item} />
         </div>
       </div>
