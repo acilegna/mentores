@@ -23,6 +23,7 @@ const Card = ({item}) => {
                 <div className="card-img-top text-center">
                   <img src={Val.img} alt={Val.name} className="photo w-75" />
                 </div>
+
                 <div className="card-body">
                   <ButtonToolbar>
                     <OverlayTrigger

@@ -18,15 +18,28 @@ export const Mentor = () => {
   return (
     <>
       <div className="container-fluid">
-        <div className="row cont-text">
-          <h1 className="col-12 text-center my-3 fw-bold">Nuestro equipo</h1>
-          <h2 className="col-12 text-center ">Juntos es mejor- Simon Sinek</h2>
+        <div
+          style={{
+            backgroundImage: `url("http://localhost:3000/images/equi_1.jpg"`,
+            height: '270px',
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            width: '100%',
+          }}
+          className="row cont-text">
+          <h1 className="col-12 text-center my-3 fw-bold title-filter">
+            Nuestro equipo
+          </h1>
+          <h2 className="col-12 text-center title-filter">
+            Juntos es mejor- Simon Sinek
+          </h2>
           <Buttons
             filterItem={filterItem}
             setItem={setItem}
             menuItems={menuItems}
           />
         </div>
+
         <div className="row">
           <Card item={item} />
         </div>
