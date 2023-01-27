@@ -7,9 +7,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {Home} from 'pages';
 function App() {
   return (
-    <div className="App">
-      <Home></Home>
-
+    <div className="">
       <BrowserRouter>
         <Navbar />
         <Routes>
@@ -19,6 +17,7 @@ function App() {
           <Route path=" " />
         </Routes>
       </BrowserRouter>
+      <Home></Home>
     </div>
   );
 }
