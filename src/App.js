@@ -7,16 +7,19 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import {Home} from 'pages';
 function App() {
   return (
-   <div className="App">
+    <div className="App">
       <Home></Home>
+
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" />
+          <Route path="/mentor" />
+          <Route path=" " />
+          <Route path=" " />
+        </Routes>
+      </BrowserRouter>
     </div>
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" />
-        <Route path="/mentor" />
-        <Route path=" " />
-        <Route path=" " />
-      </Routes>
-    </BrowserRouter>
+  );
+}
 export default App;
