@@ -66,8 +66,6 @@ export const Home = () => {
           </Container>
         </div>
       </Parallax>
-      <div style={{height: '30vh'}}></div>
-      <h1>| | |</h1>
     </div>
   );
 };
