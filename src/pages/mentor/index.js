@@ -30,9 +30,12 @@ export const Mentor = () => {
           <h1 className="col-12 text-center my-3 fw-bold title-filter">
             Nuestro equipo
           </h1>
-          <h2 className="col-12 text-center title-filter">
+          <h2 className="col-12 text-center title-prhase">
             Juntos es mejor- Simon Sinek
           </h2>
+        </div>
+        <div className="filter">
+          {' '}
           <Buttons
             filterItem={filterItem}
             setItem={setItem}

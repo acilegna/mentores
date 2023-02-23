@@ -85,25 +85,16 @@ const Cards = ({item}) => {
                 className="col-md-4 col-sm-6 card my-3 py-3 border-0"
                 key={Val.id}>
                 <div className="card-img-top text-center">
-                  <h2 className="name">
-                    Hola,{' '}
-                    <span style={{color: Val.styles.color}}>
-                      {' '}
-                      Soy {Val.name} {Val.lastname}
-                    </span>
+                  <h2 style={Val.nameColor}>
+                    Hola, soy {Val.name} {Val.lastname}
                   </h2>
                   <h3>
-                    <strong className="category"> {Val.category}</strong>
+                    <strong className="category">{Val.category}</strong>
                   </h3>
                   <img
                     src={Val.img}
                     alt={Val.name}
                     className="photo img-one background"
-                  />
-                  <img
-                    src={Val.skills.ps}
-                    alt={Val.name}
-                    className="skill anim_moveBottom"
                   />
                 </div>
 
@@ -134,11 +125,27 @@ const Cards = ({item}) => {
                   </Accordion>
                   <h3 className="costo"> {Val.costo}</h3>
                 </div>
-                <div style={{background: Val.styles.background}}>
-                  <a href={Val.redes[0]} className="space anim_moveBottom">
+
+                <div
+                  className={
+                    Val.name === 'Lisa'
+                      ? pin
+                      : over.active === Val.name
+                      ? color
+                      : colores
+                  }
+                  onMouseOver={() => {
+                    change(Val.name);
+                    if (over.active === 'Lisa') {
+                      setPin('rojo');
+                    } else {
+                      setPin('azul');
+                    }
+                  }}>
+                  <a href={Val.redes[0]} className="space">
                     <FontAwesomeIcon icon={faFacebook} color="white" />
                   </a>
-                  <a href={Val.redes.face} className="space">
+                  <a href={Val.redes[1]} className="space">
                     <FontAwesomeIcon icon={faLinkedin} color="white" />
                   </a>
                   <a href={Val.redes[1]} className="space">
