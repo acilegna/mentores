@@ -6,12 +6,6 @@ import {Button} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faTired, faCircleNotch} from '@fortawesome/free-solid-svg-icons';
 import Accordion from 'react-bootstrap/Accordion';
-import {
-  faFacebook,
-  faTwitter,
-  faGithub,
-  faLinkedin,
-} from '@fortawesome/free-brands-svg-icons';
 import {validate} from 'json-schema';
 const About = () => {
   window.location.replace('https://calendly.com/amgye2188/30min?month=2022-11');
@@ -65,14 +59,12 @@ const Cards = ({item}) => {
 
   const change = Val => {
     setOver({active: Val});
-    // console.log(Val);
   };
   const zero = '0';
   const uno = '1';
 
   const changes = name => {
     setStatus({active: name});
-    console.log(name);
   };
 
   return (
@@ -89,7 +81,7 @@ const Cards = ({item}) => {
                     Hola,{' '}
                     <span style={{color: Val.styles.color}}>
                       {' '}
-                      Soy {Val.name} {Val.lastname}
+                      Soy {Val.languaje} {Val.lastname}
                     </span>
                   </h2>
                   <h3>
@@ -134,19 +126,15 @@ const Cards = ({item}) => {
                   </Accordion>
                   <h3 className="costo"> {Val.costo}</h3>
                 </div>
+
                 <div style={{background: Val.styles.background}}>
-                  <a href={Val.redes[0]} className="space anim_moveBottom">
-                    <FontAwesomeIcon icon={faFacebook} color="white" />
-                  </a>
-                  <a href={Val.redes.face} className="space">
-                    <FontAwesomeIcon icon={faLinkedin} color="white" />
-                  </a>
-                  <a href={Val.redes[1]} className="space">
-                    <FontAwesomeIcon icon={faTwitter} color="white" />
-                  </a>
-                  <a href={Val.redes[1]} className="space">
-                    <FontAwesomeIcon icon={faGithub} color="white" />
-                  </a>
+                  {Val.redes.map((element, index) => {
+                    return (
+                      <a key={index} href={element.link} className="space">
+                        <FontAwesomeIcon icon={element.icono} color="white" />
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             );
