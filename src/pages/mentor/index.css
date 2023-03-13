@@ -248,13 +248,13 @@ h2.name {
 }
 
 .skill {
-  position: absolute;
-  top: 35%;
-  left: 20%;
+  position: relative;
+
   transform: translate(-50%, -50%);
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
+
 .anim_moveBottom {
   animation: anim_moveBottom 3s linear 0s infinite alternate;
 }

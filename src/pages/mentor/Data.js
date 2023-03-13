@@ -4,6 +4,7 @@ import {
   faGithub,
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
+import {faCalendarCheck} from '@fortawesome/free-solid-svg-icons';
 const Data = [
   {
     id: '1',
@@ -22,14 +23,10 @@ const Data = [
     img: 'images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg',
     desc: 'ppp Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. ',
     styles: {
-      color: '#de601e',
-      background:
-        'radial-gradient(circle at -20.71% 50%, #e1ffa1 0, #e5f691 8.33%, #e9ec81 16.67%, #ece070 25%, #efd35e 33.33%, #f1c54d 41.67%, #f2b53c 50%, #f3a42d 58.33%, #f59422 66.67%, #f8831d 75%, #fa721f 83.33%, #fd6025 91.67%, #ff4c2d 100%)',
+      color: '#5ba0fb',
+      background: 'linear-gradient(281deg, #5ba0fb 0%, #007abf 100%)',
     },
-    skills: {
-      AI: 'images/icons8-adobe-illustrator-50.png',
-      ps: 'images/ps.png',
-    },
+    skills: [{skill: 'images/icons8-adobe-illustrator-50.png'}],
   },
   {
     id: '2',
@@ -43,17 +40,26 @@ const Data = [
       {link: 'https://www.tuit.com/', icono: faTwitter},
       {link: 'https://www.git.com/', icono: faGithub},
       {link: 'https://www.link.com/', icono: faLinkedin},
+      {link: 'https://www.link.com/', icono: faCalendarCheck},
     ],
     img: 'images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg',
     desc: 'ppp Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. ',
+
     styles: {
-      color: '#00d24f',
-      background:
-        'radial-gradient(circle at -20.44% 43.84%, #ffff6e 0, #f8ff6d 12.5%, #dbff68 25%, #b6ff5f 37.5%, #89f253 50%, #51e24b 62.5%, #00d64b 75%, #00ce53 87.5%, #00cb61 100%)',
+      color: '#FF512F',
+      background: 'linear-gradient(to right, #ff512f, #f09819)',
     },
-    skills: {
-      AI: 'images/icons8-adobe-illustrator-50.png',
-    },
+    skills: [
+      {skill: 'images/icons8-adobe-illustrator-50.png', left: '0px', top: '-10px'},
+      {skill: 'images/ps.png'},
+      {skill: 'images/ps.png', position: 'left', top: '100px', right: '-73px'},
+      {
+        skill: 'images/icons8-adobe-illustrator-50.png',
+        position: 'left',
+        top: '110px',
+        right: '-14px',
+      },
+    ],
   },
   {
     id: '3',
@@ -71,13 +77,13 @@ const Data = [
     img: 'images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg',
     desc: 'ppp Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. ',
     styles: {
-      color: '#3dd8e0',
-      background:
-        'radial-gradient(circle at 7.19% 46.25%, #81ffff 0, #68ffff 12.5%, #52ffff 25%, #42ffff 37.5%, #3cf2f2 50%, #3dd8e0 62.5%, #40c1ce 75%, #43adbe 87.5%, #469db0 100%)',
+      color: '#92745a',
+      background: 'linear-gradient(84deg, #92745a 0%, #dcb083 100%)',
     },
-    skills: {
-      AI: 'images/icons8-adobe-illustrator-50.png',
-    },
+    skills: [
+      {skill: 'images/icons8-adobe-illustrator-50.png'},
+      {skill: 'images/ps.png'},
+    ],
   },
   {
     id: '4',
@@ -95,15 +101,14 @@ const Data = [
     img: 'images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg',
     desc: 'ppp Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. ',
     styles: {
-      color: '#002f51',
-      background:
-        'linear-gradient(85deg, #0189b4 0, #1d6686 25%, #1f4459 50%, #17252f 75%, #040505 100%)',
+      color: '#96948a',
+      background: 'linear-gradient(270deg, #b5b3a7 0%, #000000 100%)',
     },
 
-    skills: {
-      AI: 'images/icons8-adobe-illustrator-50.png',
-      ps: 'images/icons8-adobe-illustrator-50.png',
-    },
+    skills: [
+      {skill: 'images/icons8-adobe-illustrator-50.png'},
+      {skill: 'images/ps.png'},
+    ],
   },
   {
     id: '5',
@@ -121,14 +126,13 @@ const Data = [
     img: 'images/john-schnobrich-FlPc9_VocJ4-unsplash.jpg',
     desc: 'ppp Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. ',
     styles: {
-      color: '#543ec0',
-      background:
-        ' radial-gradient(circle at -19.64% 37.72%, #ff9fff 0, #ff96ff 12.5%, #ff8bff 25%, #e67df4 37.5%, #b46cd8 50%, #855aba 62.5%, #5d4b9e 75%, #3a3d85 87.5%, #173270 100%)',
+      color: '#017508',
+      background: 'linear-gradient(270deg, #71f14d 0%, #57dc15 11%, #017508 100%)',
     },
-    skills: {
-      AI: 'images/icons8-adobe-illustrator-50.png',
-      ps: 'images/icons8-adobe-illustrator-50.png',
-    },
+    skills: [
+      {skill: 'images/icons8-adobe-illustrator-50.png'},
+      {skill: 'images/ps.png'},
+    ],
   },
   {
     id: '6',
@@ -146,13 +150,12 @@ const Data = [
     desc: 'ppp Poha. Light, filling and easy to make, poha is one famous breakfast that is eaten almost everywhere in the country. And the best part is- it can be made in a number of ways. ',
     styles: {
       color: '#d118cf',
-      background:
-        'linear-gradient(90deg, rgba(43,43,43,1) 0%, rgba(122,122,122,1) 50%, rgba(148,148,148,1) 100%)',
+      background: 'linear-gradient(90deg, #771277 0%, #d118cf 100%)',
     },
-    skills: {
-      AI: 'images/icons8-adobe-illustrator-50.png',
-      ps: 'images/icons8-adobe-illustrator-50.png',
-    },
+    skills: [
+      {skill: 'images/icons8-adobe-illustrator-50.png'},
+      {skill: 'images/ps.png'},
+    ],
   },
 ];
 

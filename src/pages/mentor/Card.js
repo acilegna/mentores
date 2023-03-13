@@ -59,6 +59,7 @@ const Cards = ({item}) => {
 
   const change = Val => {
     setOver({active: Val});
+    console.log(Val);
   };
   const zero = '0';
   const uno = '1';
@@ -92,11 +93,22 @@ const Cards = ({item}) => {
                     alt={Val.name}
                     className="photo img-one background"
                   />
-                  <img
-                    src={Val.skills.ps}
-                    alt={Val.name}
-                    className="skill anim_moveBottom"
-                  />
+                  {Val.skills.map((element, index) => {
+                    return (
+                      <img
+                        key={index}
+                        src={element.skill}
+                        alt={''}
+                        className="skill anim_moveBottom"
+                        style={{
+                          left: element.left,
+                          top: element.top,
+                          float: element.position,
+                          right: element.right,
+                        }}
+                      />
+                    );
+                  })}
                 </div>
 
                 <div className="card-body">
