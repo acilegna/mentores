@@ -29,7 +29,7 @@ export const Home = () => {
   return (
     <div style={{textAlign: 'center'}}>
       <Parallax bgImage={imagen} strength={200}>
-        <div className="cont-mentor" style={{height: 400}}>
+        <div className="cont-mentor" style={{height: '100vh'}}>
           <Container fluid>
             <Row>
               <Col>
