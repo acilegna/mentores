@@ -1,5 +1,4 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.css';
 import './index.css';
 import logo from './HACK.png';
 // maneras de importar , mas recomendable la segunda, porq solo estas importando ese elemanto
