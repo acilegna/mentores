@@ -1,0 +1,35 @@
+.nav-pills .show > .nav-link {
+  color: rgb(20, 20, 20);
+  background-color: rgba(126, 0, 0, 0);
+  letter-spacing: 5px;
+  font-family: 'Calligraffitti', cursive !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'Suranna', serif !important;
+}
+.nav-pills .nav-link.active {
+  color: rgb(59, 59, 59) !important;
+  background-color: rgba(126, 0, 0, 0) !important;
+}
+.nav {
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.nav-link {
+  color: #484848 !important;
+  letter-spacing: 3px;
+}
+
+.line:hover,
+.nav-link.active.line.active:hover {
+  color: #484848 !important;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  margin-top: auto;
+}
