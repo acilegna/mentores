@@ -4,7 +4,7 @@ import {Parallax} from 'react-parallax';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-//import imagen from './developer-coding-on-laptop.jpg';
+import imagen from './developer-coding-on-laptop.jpg';
 import Typewriter from 'typewriter-effect';
 
 import Button from 'react-bootstrap/Button';
@@ -28,7 +28,7 @@ export const Home = () => {
 
   return (
     <div style={{textAlign: 'center'}}>
-      <Parallax bgImage={''} strength={200}>
+      <Parallax bgImage={imagen} strength={200}>
         <div className="cont-mentor" style={{height: '100vh'}}>
           <Container fluid>
             <Row>
