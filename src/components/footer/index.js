@@ -12,14 +12,14 @@ export const Footer = () => {
   return (
     <footer>
       <Row className="foot">
-        <Col>1 of 3</Col>
+        <Col></Col>
         <Col>
           {' '}
-          <small className="ml-2">
-            &copy; Devwares, 2023. All rights reserved.
+          <small className="ml-2 text">
+            &copy; Angelica, 2023. All rights reserved.
           </small>
         </Col>
-        <Col>3 of 3</Col>
+        <Col></Col>
       </Row>
     </footer>
   );
