@@ -117,12 +117,12 @@ h2.name {
   color: #ffffff;
 }
 .title-filter {
-  color: rgb(255, 255, 255);
+  color: #f8e4cc;
   padding-top: 20px;
   font-size: 56px;
 }
 .title-prhase {
-  color: rgb(255, 255, 255);
+  color: #f8e4cc;
   padding-bottom: 20px;
   font-family: Yu Gothic;
   font-size: 24px;
@@ -138,8 +138,8 @@ h2.name {
 }
 
 .img-one {
-  height: 210px;
-  width: 210px !important;
+  height: 170px;
+  width: 170px !important;
   border-radius: 150px;
   border: 6px solid #d3d3d3;
 
@@ -250,20 +250,25 @@ h2.name {
 .skill {
   position: relative;
 
-  transform: translate(-50%, -50%);
   width: 30px;
   height: 30px;
 }
-
+.contSkill {
+  margin-top: -30px;
+}
 .anim_moveBottom {
   animation: anim_moveBottom 3s linear 0s infinite alternate;
 }
+/* img.skill:hover {
+  box-shadow: 0px 0px 4px 4px #a4a4a4;
+  padding: 1px;
+} */
 @keyframes anim_moveBottom {
   0% {
     transform: translateY(0px);
   }
 
   100% {
-    transform: translateY(20px);
+    transform: translateY(10px);
   }
 }

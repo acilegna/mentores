@@ -4,9 +4,9 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import {ButtonToolbar} from 'react-bootstrap';
 import {Button} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
+import {faTired, faCircleNotch} from '@fortawesome/free-solid-svg-icons';
 import Accordion from 'react-bootstrap/Accordion';
-
+import {validate} from 'json-schema';
 const About = () => {
   window.location.replace('https://calendly.com/amgye2188/30min?month=2022-11');
 };
@@ -93,18 +93,22 @@ const Cards = ({item}) => {
                     alt={Val.name}
                     className="photo img-one background"
                   />
-                  <div className="contSkill">
-                    {Val.skills.map((element, index) => {
-                      return (
-                        <img
-                          key={index}
-                          src={element.skill}
-                          alt={''}
-                          className="skill anim_moveBottom"
-                        />
-                      );
-                    })}
-                  </div>
+                  {Val.skills.map((element, index) => {
+                    return (
+                      <img
+                        key={index}
+                        src={element.skill}
+                        alt={''}
+                        className="skill anim_moveBottom"
+                        style={{
+                          left: element.left,
+                          top: element.top,
+                          float: element.position,
+                          right: element.right,
+                        }}
+                      />
+                    );
+                  })}
                 </div>
 
                 <div className="card-body">

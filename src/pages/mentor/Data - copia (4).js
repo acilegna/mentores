@@ -5,7 +5,6 @@ import {
   faLinkedin,
 } from '@fortawesome/free-brands-svg-icons';
 import {faCalendarCheck} from '@fortawesome/free-solid-svg-icons';
-
 const Data = [
   {
     id: '1',
