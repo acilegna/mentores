@@ -106,7 +106,6 @@ const Cards = ({item}) => {
                     })}
                   </div>
                 </div>
-
                 <div className="card-body">
                   <ButtonToolbar>
                     <OverlayTrigger
@@ -134,12 +133,15 @@ const Cards = ({item}) => {
                   </Accordion>
                   <h3 className="costo"> {Val.costo}</h3>
                 </div>
-
                 <div style={{background: Val.styles.background}}>
                   {Val.redes.map((element, index) => {
                     return (
                       <a key={index} href={element.link} className="space">
-                        <FontAwesomeIcon icon={element.icono} color="white" />
+                        <FontAwesomeIcon
+                          icon={element.icono}
+                          color="white"
+                          className="fonts"
+                        />
                       </a>
                     );
                   })}

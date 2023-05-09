@@ -256,6 +256,11 @@ h2.name {
 .contSkill {
   margin-top: -30px;
 }
+
+.fonts:hover {
+  font-size: 20px;
+}
+
 .anim_moveBottom {
   animation: anim_moveBottom 3s linear 0s infinite alternate;
 }
