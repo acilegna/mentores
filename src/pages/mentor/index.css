@@ -52,7 +52,7 @@ h2.name {
   letter-spacing: 0.0625em;
   padding: 8px 10px;
   text-transform: uppercase;
-  font: bold 16px 'Bitter', sans-serif; /* use google font */
+  font: bold 14px 'Bitter', sans-serif; /* use google font */
   line-height: 2;
   position: relative;
   display: inline-block;

@@ -93,24 +93,19 @@ const Cards = ({item}) => {
                     alt={Val.name}
                     className="photo img-one background"
                   />
-                  {Val.skills.map((element, index) => {
-                    return (
-                      <img
-                        key={index}
-                        src={element.skill}
-                        alt={''}
-                        className="skill anim_moveBottom"
-                        style={{
-                          left: element.left,
-                          top: element.top,
-                          float: element.position,
-                          right: element.right,
-                        }}
-                      />
-                    );
-                  })}
+                  <div className="contSkill">
+                    {Val.skills.map((element, index) => {
+                      return (
+                        <img
+                          key={index}
+                          src={element.skill}
+                          alt={''}
+                          className="skill anim_moveBottom"
+                        />
+                      );
+                    })}
+                  </div>
                 </div>
-
                 <div className="card-body">
                   <ButtonToolbar>
                     <OverlayTrigger
@@ -138,12 +133,15 @@ const Cards = ({item}) => {
                   </Accordion>
                   <h3 className="costo"> {Val.costo}</h3>
                 </div>
-
                 <div style={{background: Val.styles.background}}>
                   {Val.redes.map((element, index) => {
                     return (
                       <a key={index} href={element.link} className="space">
-                        <FontAwesomeIcon icon={element.icono} color="white" />
+                        <FontAwesomeIcon
+                          icon={element.icono}
+                          color="white"
+                          className="fonts"
+                        />
                       </a>
                     );
                   })}
