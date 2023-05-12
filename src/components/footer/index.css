@@ -1,0 +1,9 @@
+.foot {
+  --bs-gutter-x: 0rem !important;
+  background-color: rgb(227, 227, 227);
+}
+.text {
+  text-align: center;
+  color: #3b3b3b;
+  font-size: larger;
+}

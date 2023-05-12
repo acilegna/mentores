@@ -2,13 +2,13 @@
   color: rgb(20, 20, 20);
   background-color: rgba(126, 0, 0, 0);
   letter-spacing: 5px;
-  font-family: 'Calligraffitti', cursive;
-  font-family: 'Cormorant Garamond', serif;
-  font-family: 'Suranna', serif;
+  font-family: 'Calligraffitti', cursive !important;
+  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'Suranna', serif !important;
 }
 .nav-pills .nav-link.active {
-  color: rgb(20, 20, 20);
-  background-color: rgba(126, 0, 0, 0);
+  color: rgb(59, 59, 59) !important;
+  background-color: rgba(126, 0, 0, 0) !important;
 }
 .nav {
   background: rgba(255, 255, 255, 0.8);
@@ -19,24 +19,15 @@
 }
 
 .nav-link {
-  color: #484848;
+  color: #484848 !important;
   letter-spacing: 3px;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out;
 }
 
 .line:hover,
 .nav-link.active.line.active:hover {
-  color: #484848;
-  letter-spacing: 4px;
-  text-decoration-color: rgba(0, 0, 0, 1);
-  transition: 0.9s ease-in-out;
+  color: #484848 !important;
 }
 
-.line {
-  text-decoration: underline 0.15em rgba(0, 0, 0, 0);
-  transition: text-decoration-color 300ms;
-}
 .image {
   width: 50px;
   height: 50px;
