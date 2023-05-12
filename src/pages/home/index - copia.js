@@ -60,7 +60,7 @@ export const Home = () => {
                   id="btns-primary"
                   size="sm"
                   disabled={isLoading}
-                  onClick={() => navigate('/mentor')}>
+                  onClick={!isLoading ? handleClick : null}>
                   {isLoading ? 'CARGANDO…' : 'VER MENTORES'}
                 </Button>
               </Col>

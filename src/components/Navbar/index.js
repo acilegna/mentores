@@ -31,7 +31,7 @@ export const Navbar = () => {
         <Nav.Link
           onClick={() => navigate('/mentor')}
           className="line"
-          eventKey="disableds">
+          eventKey="disabled">
           MENTORES
         </Nav.Link>
       </Nav.Item>
